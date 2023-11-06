@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import image from './planner.jpg';
+import imageTwo from './project.jpg'
 import './App.css';
+import { Planner } from './Planner';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container" >
+     <img className="container" src={image} width="250px"alt="plannner"/>
+     </div>
+
+     <div className="container">
+<h1>MY PLANNER</h1>
+</div>
+<Planner/>
+<div className='container'>
+     <img src={imageTwo} width="250px" alt="project"/>
+     </div>
     </div>
   );
 }
